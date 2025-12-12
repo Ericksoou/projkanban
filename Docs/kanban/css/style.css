@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  background-color: #e0d5d9;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* CSS para o topo */
+
+#topo {
+  display: flex;
+  background-color: #dbb4ad;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 3px 5px;
+  border-radius: 3px;
+}
+
+#menu {
+  font-size: 3vh;
+}
+
+img {
+  flex-grow: 1;
+}
+
+select {
+  margin-right: 20px;
+  flex-grow: 3;
+}
+
+/* CSS para quadro kanban */
+
+main {
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+#backlog > h1,
+#andamento > h1,
+#concluidas > h1 {
+  font-size: 3vh;
+  text-align: center;
+  padding: 5px;
+  color: #3a2d32;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#backlog {
+  flex-grow: 1;
+  background-color: rgb(228, 201, 201);
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  border: 1px solid black;
+  margin: 3px 5px;
+  border-radius: 3px;
+}
+
+#andamento {
+  flex-grow: 1;
+  background-color: rgb(228, 201, 201);
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 3px 5px;
+  border-radius: 3px;
+}
+
+#concluidas {
+  flex-grow: 1;
+  background-color: rgb(228, 201, 201);
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 3px 5px;
+  border-radius: 3px;
+}
+
+/* CSS para os cards */
+.baia-tarefas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #c2ccb4;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.card-idPri {
+  display: flex;
+  flex-direction: row;
+  padding: 3px 0px;
+}
+
+.card-idPri > :first-child {
+  flex-grow: 1;
+  padding: 3px;
+}
+
+.card-idPri > :nth-child(2) {
+  flex-grow: 1;
+  padding: 3px;
+}
+
+.card-executantes {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-executantes > :first-child {
+  flex-grow: 1;
+  padding: 3px;
+}
+
+.card-executantes > :nth-child(2) {
+  flex-grow: 1;
+  padding: 3px;
+}

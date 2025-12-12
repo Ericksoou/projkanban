@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Kanban</title>
+</head>
+<body>
+    <header id="topo">
+        <img src="" alt="logo">
+        <div>
+            <select name="menu" id="menu" >
+                <option value="kanban">Kanban</option>
+                <option value="novoUsuario">Novo Usuario</option>
+                <option value="novaTarefa">Nova Tarefa</option>
+            </select>
+        </div>
+
+    </header>
+    <main>
+        <div id="backlog">
+            <!-- sprint backlog -->
+            <h1>Sprint Backlog</h1>
+            <div class="baia-tarefas">
+
+                <!-- inicio de um card -->
+                <div class="card">
+                    <div class="card-titulo">
+                        <label for="titulo">Titulo Tarefa</label> <br>
+                        <input id="titulo"  type="text" value="Comprar Doces">
+                    </div>
+                    
+                    <div class="card-idPri">
+                        <div>
+                            <label for="idtarefa">ID:</label> <br>
+                            <input id="idtarefa" type="text" value="0001" disabled>
+                        </div>
+                        <div>
+                            <label for="prioridade">prioridade</label> <br>
+                            <select name="prioridade" id="prioridade">
+                                <option value="normal">normal</option>
+                                <option value="baixa">baixa</option>
+                                <option value="alta">alta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-executantes">
+
+                        <div>
+                            <label for="abertoPor">Aberto por: </label>
+                            <input id="abertoPor" name="abertoPor" type="text" value="José da Dores" disabled>
+                        </div>
+                        
+                        <div>
+                            <label for="responsavel">Responsavel</label>
+                            <select name="responsavel" id="responsavel">
+                                <option value="001">José Manfred</option>
+                                <option value="002">Alfredo Cancela</option>
+                                <option value="003">Janete Gorete</option>
+                            </select>  
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="aberto">Não iniciada</option>
+                            <option value="aberto">Em andamento</option>
+                            <option value="fechado">Fechado</option>
+                        </select> 
+                    </div>
+                </div>
+                <!-- final de um card -->
+
+                <!-- inicio de um card -->
+                <div class="card">
+                    <div class="card-titulo">
+                        <label for="titulo">Titulo Tarefa</label><br>
+                        <input id="titulo"  type="text" value="Comprar Doces">
+                    </div>
+                    
+                    <div class="card-idPri">
+                        <div>
+                            <label for="idtarefa">ID:</label> <br>
+                            <input id="idtarefa" type="text" value="0001" disabled>
+                        </div>
+                        <div>
+                            <label for="prioridade">prioridade</label> <br>
+                            <select name="prioridade" id="prioridade">
+                                <option value="normal">normal</option>
+                                <option value="baixa">baixa</option>
+                                <option value="alta">alta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-executantes">
+
+                        <div>
+                            <label for="abertoPor">Aberto por: </label>
+                            <input id="abertoPor" name="abertoPor" type="text" value="José da Dores" disabled>
+                        </div>
+                        
+                        <div>
+                            <label for="responsavel">Responsavel</label>
+                            <select name="responsavel" id="responsavel">
+                                <option value="001">José Manfred</option>
+                                <option value="002">Alfredo Cancela</option>
+                                <option value="003">Janete Gorete</option>
+                            </select>  
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="aberto">Aberto</option>
+                            <option value="fechado">Fechado</option>
+                        </select> 
+                    </div>
+                </div>
+                <!-- final de um card -->
+                <!-- inicio de um card -->
+                <div class="card">
+                    <div class="card-titulo">
+                        <label for="titulo">Titulo Tarefa</label>
+                        <input id="titulo"  type="text" value="Comprar Doces">
+                    </div>
+                    
+                    <div class="card-idPri">
+                        <div>
+                            <label for="idtarefa">ID:</label> <br>
+                            <input id="idtarefa" type="text" value="0001" disabled>
+                        </div>
+                        <div>
+                            <label for="prioridade">prioridade</label> <br>
+                            <select name="prioridade" id="prioridade">
+                                <option value="normal">normal</option>
+                                <option value="baixa">baixa</option>
+                                <option value="alta">alta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-executantes">
+
+                        <div>
+                            <label for="abertoPor">Aberto por: </label>
+                            <input id="abertoPor" name="abertoPor" type="text" value="José da Dores" disabled>
+                        </div>
+                        
+                        <div>
+                            <label for="responsavel">Responsavel</label>
+                            <select name="responsavel" id="responsavel">
+                                <option value="001">José Manfred</option>
+                                <option value="002">Alfredo Cancela</option>
+                                <option value="003">Janete Gorete</option>
+                            </select>  
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="aberto">Aberto</option>
+                            <option value="fechado">Fechado</option>
+                        </select> 
+                    </div>
+                </div>
+                <!-- final de um card -->
+                <!-- inicio de um card -->
+                <div class="card">
+                    <div class="card-titulo">
+                        <label for="titulo">Titulo Tarefa</label><br>
+                        <input id="titulo"  type="text" value="Comprar Doces">
+                    </div>
+                    
+                    <div class="card-idPri">
+                        <div>
+                            <label for="idtarefa">ID:</label> <br>
+                            <input id="idtarefa" type="text" value="0001" disabled>
+                        </div>
+                        <div>
+                            <label for="prioridade">prioridade</label> <br>
+                            <select name="prioridade" id="prioridade">
+                                <option value="normal">normal</option>
+                                <option value="baixa">baixa</option>
+                                <option value="alta">alta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-executantes">
+
+                        <div>
+                            <label for="abertoPor">Aberto por: </label>
+                            <input id="abertoPor" name="abertoPor" type="text" value="José da Dores" disabled>
+                        </div>
+                        
+                        <div>
+                            <label for="responsavel">Responsavel</label>
+                            <select name="responsavel" id="responsavel">
+                                <option value="001">José Manfred</option>
+                                <option value="002">Alfredo Cancela</option>
+                                <option value="003">Janete Gorete</option>
+                            </select>  
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="aberto">Aberto</option>
+                            <option value="fechado">Fechado</option>
+                        </select> 
+                    </div>
+                </div>
+                <!-- final de um card -->                                  
+
+
+            </div>
+        </div>
+        <div id="andamento">
+            <!-- tarefas em andamento -->
+             <h1>Em andamento</h1>
+            <div class="baia-tarefas">
+                <!-- inicio de um card -->
+                <div class="card">
+                    <div class="card-titulo">
+                        <label for="titulo">Titulo Tarefa</label><br>
+                        <input id="titulo"  type="text" value="Comprar Doces">
+                    </div>
+                    
+                    <div class="card-idPri">
+                        <div>
+                            <label for="idtarefa">ID:</label> <br>
+                            <input id="idtarefa" type="text" value="0001" disabled>
+                        </div>
+                        <div>
+                            <label for="prioridade">prioridade</label> <br>
+                            <select name="prioridade" id="prioridade">
+                                <option value="normal">normal</option>
+                                <option value="baixa">baixa</option>
+                                <option value="alta">alta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-executantes">
+
+                        <div>
+                            <label for="abertoPor">Aberto por: </label>
+                            <input id="abertoPor" name="abertoPor" type="text" value="José da Dores" disabled>
+                        </div>
+                        
+                        <div>
+                            <label for="responsavel">Responsavel</label>
+                            <select name="responsavel" id="responsavel">
+                                <option value="001">José Manfred</option>
+                                <option value="002">Alfredo Cancela</option>
+                                <option value="003">Janete Gorete</option>
+                            </select>  
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="aberto">Aberto</option>
+                            <option value="fechado">Fechado</option>
+                        </select> 
+                    </div>
+                </div>
+                <!-- final de um card --> 
+                <!-- inicio de um card -->
+                <div class="card">
+                    <div class="card-titulo">
+                        <label for="titulo">Titulo Tarefa</label><br>
+                        <input id="titulo"  type="text" value="Comprar Doces">
+                    </div>
+                    
+                    <div class="card-idPri">
+                        <div>
+                            <label for="idtarefa">ID:</label> <br>
+                            <input id="idtarefa" type="text" value="0001" disabled>
+                        </div>
+                        <div>
+                            <label for="prioridade">prioridade</label> <br>
+                            <select name="prioridade" id="prioridade">
+                                <option value="normal">normal</option>
+                                <option value="baixa">baixa</option>
+                                <option value="alta">alta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-executantes">
+
+                        <div>
+                            <label for="abertoPor">Aberto por: </label>
+                            <input id="abertoPor" name="abertoPor" type="text" value="José da Dores" disabled>
+                        </div>
+                        
+                        <div>
+                            <label for="responsavel">Responsavel</label>
+                            <select name="responsavel" id="responsavel">
+                                <option value="001">José Manfred</option>
+                                <option value="002">Alfredo Cancela</option>
+                                <option value="003">Janete Gorete</option>
+                            </select>  
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="aberto">Aberto</option>
+                            <option value="fechado">Fechado</option>
+                        </select> 
+                    </div>
+                </div>
+                <!-- final de um card -->                                  
+            </div>
+        </div>
+        <div id="concluidas">
+            <!-- tarefas concluidas -->
+             <h1>Concluídas</h1>
+            <div class="baia-tarefas">
+                <!-- inicio de um card -->
+                <div class="card">
+                    <div class="card-titulo">
+                        <label for="titulo">Titulo Tarefa</label><br>
+                        <input id="titulo"  type="text" value="Comprar Doces">
+                    </div>
+                    
+                    <div class="card-idPri">
+                        <div>
+                            <label for="idtarefa">ID:</label> <br>
+                            <input id="idtarefa" type="text" value="0001" disabled>
+                        </div>
+                        <div>
+                            <label for="prioridade">prioridade</label> <br>
+                            <select name="prioridade" id="prioridade">
+                                <option value="normal">normal</option>
+                                <option value="baixa">baixa</option>
+                                <option value="alta">alta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-executantes">
+
+                        <div>
+                            <label for="abertoPor">Aberto por: </label>
+                            <input id="abertoPor" name="abertoPor" type="text" value="José da Dores" disabled>
+                        </div>
+                        
+                        <div>
+                            <label for="responsavel">Responsavel</label>
+                            <select name="responsavel" id="responsavel">
+                                <option value="001">José Manfred</option>
+                                <option value="002">Alfredo Cancela</option>
+                                <option value="003">Janete Gorete</option>
+                            </select>  
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="aberto">Aberto</option>
+                            <option value="fechado">Fechado</option>
+                        </select> 
+                    </div>
+                </div>
+                <!-- final de um card --> 
+                <!-- inicio de um card -->
+                <div class="card">
+                    <div class="card-titulo">
+                        <label for="titulo">Titulo Tarefa</label><br>
+                        <input id="titulo"  type="text" value="Comprar Doces">
+                    </div>
+                    
+                    <div class="card-idPri">
+                        <div>
+                            <label for="idtarefa">ID:</label> <br>
+                            <input id="idtarefa" type="text" value="0001" disabled>
+                        </div>
+                        <div>
+                            <label for="prioridade">prioridade</label> <br>
+                            <select name="prioridade" id="prioridade">
+                                <option value="normal">normal</option>
+                                <option value="baixa">baixa</option>
+                                <option value="alta">alta</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-executantes">
+
+                        <div>
+                            <label for="abertoPor">Aberto por: </label>
+                            <input id="abertoPor" name="abertoPor" type="text" value="José da Dores" disabled>
+                        </div>
+                        
+                        <div>
+                            <label for="responsavel">Responsavel</label>
+                            <select name="responsavel" id="responsavel">
+                                <option value="001">José Manfred</option>
+                                <option value="002">Alfredo Cancela</option>
+                                <option value="003">Janete Gorete</option>
+                            </select>  
+                        </div>
+
+                    </div>
+                    <div>
+                        <label for="status">Status</label>
+                        <select name="status" id="status">
+                            <option value="aberto">Aberto</option>
+                            <option value="fechado">Fechado</option>
+                        </select> 
+                    </div>
+                </div>
+                <!-- final de um card -->                                  
+            </div>
+        </div>
+
+
+    </main>
+
+    
+</body>
+</html>
