@@ -13,6 +13,3 @@ router.post('/alterarexemplo/', mainController.alterarExemplo);
 router.get('/excluirexemplo/:id', mainController.excluirExemplo);
 
 module.exports = router;
-
-
-
