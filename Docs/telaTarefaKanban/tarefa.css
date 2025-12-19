@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0F172A;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.caixa {
+    background: #1E293B;
+    padding: 30px; 
+    width: 380px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #F8FAFC;
+}
+
+h3{
+    color: #F8FAFC;
+}
+
+.form-tarefa {
+    margin: 10px 0 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-tarefa input,
+.form-tarefa textarea,
+.form-tarefa select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+.salvar {
+    background: #204d95;
+    color: white;
+}
+
+.cancelar {
+    background: #DC2626;
+}

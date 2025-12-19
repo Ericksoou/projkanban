@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Tarefa</title>
+    <link rel="stylesheet" href="tarefa.css">
+</head>
+<body>
+
+    <div class="caixa">
+        <h2>Nova Tarefa</h2>
+
+        <form class="form-tarefa">
+            <h3>Título</h3> <!-- input para criar uma caixa de texto pequena -->
+          <input type="text" placeholder="Digite o título da tarefa" required>
+
+            <h3>Descrição</h3> <!-- textarea para criar uma caixa de texto grande -->
+            <textarea placeholder="Descreva a tarefa"></textarea>
+
+            <h3>Status</h3>
+            <select> 
+                <option>Precisa ser feito</option>
+                <option>Está Fazendo</option>
+                <option>Concluído</option>
+            </select>
+
+            <div class="botoes">
+                <button type="submit" class="btn salvar">Salvar</button> <!-- submit para quando ser clicado aparecer as informaçoes escritas -->
+                <button type="submit" class="btn cancelar">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

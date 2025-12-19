@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <%- include('./partials/head') %>
+
+  <body>
+    <%- include('./partials/header') %>
+
+    <main>
+      <div id="backlog">
+        <!-- sprint backlog -->
+        <h1>Sprint Backlog</h1>
+        <div class="baia-tarefas">
+          <% dados.tarefas.forEach((tarefa)=>{ %>
+          <%-include('./partials/card',{tarefa:tarefa}) %> <%})%>
+        </div>
+      </div>
+      <div id="andamento">
+        <!-- tarefas em andamento -->
+        <h1>Em andamento</h1>
+        <div class="baia-tarefas"></div>
+      </div>
+      <div id="concluidas">
+        <!-- tarefas concluidas -->
+        <h1>Concluídas</h1>
+        <div class="baia-tarefas"></div>
+      </div>
+    </main>
+
+    <script src="/js/menu.js"></script>
+  </body>
+
+  <script>
+    dados = <%- JSON.stringify(dados.tarefas[0]) %>;
+  </script>
+</html>

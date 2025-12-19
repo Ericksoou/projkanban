@@ -1,36 +1,34 @@
-const Exemplo = require('../models/mainModel.js')
+const mostraPaginaKanban = (req,res) => {
+    console.log("mainController.js","mostraPaginaKanban()")
 
-
-const mostraPaginaInicial = (req, res) => {
-
-    console.log('mainController.js','mostraPaginaInicial()')
-
-    // Este exemplo pode ser usado para testar o envio de dados direto (hardcoded) para a view
-    //===================================================================================================================================
-    dados = {
-        mensagem:'rota raiz', 
-        titulo:'pagina principal',
-
-        // É possível enviar dados diretamente para testes da view sem precisar consultar o banco
-        exemplos:[ 
-            {
-                campo1: 'L1 - Dados 1',
-                campo2: 'L1 - Dados 2',
-                campo3: 'L1 - Dados 3',
-            },
-            {
-                campo1: 'L2 - Dados 1',
-                campo2: 'L2 - Dados 2',
-                campo3: 'L2 - Dados 3',
-            }            
-        ]
+    // obter os dados atraves do model
+    let dados = {
+        titulo:"Kanban",
+            tarefas: [
+      {
+        id: 1,
+        titulo: "comprar doces",
+        prioridade: "normal",
+        abertoPor: "José das Dores",
+        responsavel: "José Manfred",
+        status: "não iniciada",
+      },
+      {
+        id: 2,
+        titulo: "Lavar Louça",
+        prioridade: "alta",
+        abertoPor: "Janete Claudete",
+        responsavel: "Claudio Claudete",
+        status: "em andamento",
+      },
+    ],
     }
-    
-    res.render('main', { dados:dados})
 
+    // renderizar a pagina com os dados
 
+    res.render("kanban",{dados:dados})
+}
 
-
-module.exports =  {
-    mostraPaginaInicial,
-};
+module.exports = {
+    mostraPaginaKanban
+}

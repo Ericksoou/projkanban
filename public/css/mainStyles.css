@@ -26,6 +26,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: #e0d5d9;
+	display: flex;
+	flex-direction: column;
 }
 ol, ul {
 	list-style: none;
@@ -51,141 +54,127 @@ table {
 /*------------------------------------------------------------------------------------------------------------------------*/
 
 
-/* Formatacao de titulos */
-
-
-.titulo1 {
-    margin: 20px;
-    font-weight: bold;
-    font-size: 43px;
+#topo {
+  display: flex;
+  background-color: #dbb4ad;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 3px 5px;
+  border-radius: 3px;
 }
 
-/* Formatacao de botoes */
-
-.botao1{
-	margin-left: 20px;
-	margin-bottom: 30px;
-	font-weight: bold;
-	margin-top: 30px;
-	padding: 10px;
-	border-radius: 10px;
-	background-color: blue;
-	color: white;
-	text-decoration: none;
+#menu {
+  font-size: 3vh;
 }
 
-.btn_alterar {
-	background-color: blue;
-    padding: 6px;
-    border-radius: 10px;
-    color: white;
-    font-size: 1vh;
+img {
+  flex-grow: 1;
 }
 
-.btn_exluir {
-    background-color: red;
-    padding: 6px;
-    border-radius: 10px;
-    color: white;
-    font-size: 1vh;
+select {
+  margin-right: 20px;
+  flex-grow: 3;
 }
 
-/* Formatacao do main */
+/* CSS para quadro kanban */
 
 main {
-	padding: 10px;
+  display: flex;
+  align-items: stretch;
+  flex-grow: 1;
 }
 
-/* Formatacao do menu */
-nav{
-	display: flex;
-	justify-content: start;
-	align-items: center;
-	padding: 3px;
-	width: 100%;
-	height: 7vh;
-	background-color: rgb(61, 61, 170);
-	
+#backlog > h1,
+#andamento > h1,
+#concluidas > h1 {
+  font-size: 3vh;
+  text-align: center;
+  padding: 5px;
+  color: #3a2d32;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-nav > div.logo  img {
-  height: 50px;
-  margin: 1vh;
-  width: auto; 
+#backlog {
+  flex-grow: 1;
+  background-color: rgb(228, 201, 201);
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  border: 1px solid black;
+  margin: 3px 5px;
+  border-radius: 3px;
 }
 
-nav > div.opcoes {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
+#andamento {
+  flex-grow: 1;
+  background-color: rgb(228, 201, 201);
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 3px 5px;
+  border-radius: 3px;
 }
 
-nav > div.opcoes > ul {
-    display: flex;	
-	color: white;
+#concluidas {
+  flex-grow: 1;
+  background-color: rgb(228, 201, 201);
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 3px 5px;
+  border-radius: 3px;
 }
 
-nav > div.opcoes > ul > li {
-	font-size: 23px;
-	margin: 5px 10px;
+/* CSS para os cards */
+.baia-tarefas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-nav > div.opcoes > ul > li >  a{
-	color: white;
-	text-decoration: none;
+.card {
+  background-color: #c2ccb4;
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-
-nav > div.opcoes > ul > li :hover {
-	text-decoration: underline;
+.card-idPri {
+  display: flex;
+  flex-direction: row;
+  padding: 3px 0px;
 }
 
-/* Formatacao da tabela */
-
-table {
-	font-size: 23px;
-	margin: 20px;
+.card-idPri > :first-child {
+  flex-grow: 1;
+  padding: 3px;
 }
 
-table th{
-	text-transform: uppercase;
-	font-weight: bold;
+.card-idPri > :nth-child(2) {
+  flex-grow: 1;
+  padding: 3px;
 }
 
-
-th, td {
-	border: 1px solid;
-	padding: 6px;
+.card-executantes {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Formatacao do formulario */
-
-div.formEntrada {
-	margin: 10px 20px;
+.card-executantes > :first-child {
+  flex-grow: 1;
+  padding: 3px;
 }
 
-input.formBotao{
-	margin: 10px 20px;
+.card-executantes > :nth-child(2) {
+  flex-grow: 1;
+  padding: 3px;
 }
-
-.formEntrada > label {
-	font-weight: bold;
-}
-
-
-
-/* Formatacao do Rodape */
-
-footer {
-	height: 2vh;
-	background-color: rgb(61, 61, 170);
-	color: white;
-	height: 7vh;
-	font-size: 23px;
-}
-
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 /* FINAL DO CSS CUSTOMIZADO                                                                                              */
